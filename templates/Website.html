@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>D.Web</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styling.css') }}" />
+  </head>
+  <body>
+    <div class="bagian-utama">
+      <!-- Bagian Navigation Bar -->
+      <div class="bagian-navbar">
+        <ul class="ul-navbar">
+          <li class="li-navbar">
+            <a href="#" class="a-navbar">HOME</a>
+          </li>
+      </div>
+      <!-- Akhir Navigation Bar -->
+
+      <!-- Bagian Content -->
+      <div class="bagian-content">
+        <div class="card_1">
+          <a href="{{ url_for('tictactoe') }}">
+            <img src="{{ url_for('static', filename='tictactoe.jpg') }}" alt="lorem ipsum" />
+            <div class="card-info1">
+              <h2>Tic Tac Toe</h2>
+              <p>Game 1</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card_2">
+          <a href="{{ url_for('suit') }}">
+            <img src="{{ url_for('static', filename='suit.webp') }}" alt="lorem ipsum" />
+            <div class="card-info2">
+              <h2>Suit</h2>
+              <p>Game 2</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Akhir Content -->
+
+      <!-- Bagian Footer -->
+      <div class="bagian-footer">
+        <h1 class="h1-footer">SELAMAT DATANG</h1>
+      </div>
+      <!-- Akhir Footer -->
+    </div>
+  </body>
+</html>
